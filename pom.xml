@@ -1,84 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<!-- Versión del modelo del proyecto -->
 	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Información del padre del proyecto -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- buscar padre desde el repositorio -->
 	</parent>
+
+	<!-- Información del proyecto -->
 	<groupId>coworking.space</groupId>
 	<artifactId>core</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>coworking_space</name>
-	<description>Sistema de Reservas para &apos;Coworking Space&apos;</description>
+	<description>Sistema de Reservas para 'Coworking Space'</description>
 	<url/>
+
+	<!-- Información de licencias -->
 	<licenses>
 		<license/>
 	</licenses>
+
+	<!-- Información de desarrolladores -->
 	<developers>
 		<developer/>
 	</developers>
+
+	<!-- Información del control de versiones -->
 	<scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
 		<url/>
 	</scm>
+
+	<!-- Propiedades del proyecto -->
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+	<!-- Dependencias del proyecto -->
 	<dependencies>
+		<!-- Dependencia de Spring Data JPA -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
+		<!-- Dependencia de Spring Validation -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+
+		<!-- Dependencia de Spring Web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- Dependencia de Spring DevTools -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Dependencia del conector MySQL -->
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Dependencia de Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- Dependencia de Spring Boot Test -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Dependencia de SpringDoc OpenAPI -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>2.6.0</version>
 		</dependency>
-
 	</dependencies>
 
+	<!-- Configuración de construcción del proyecto -->
 	<build>
 		<plugins>
+			<!-- Plugin de Spring Boot Maven -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
