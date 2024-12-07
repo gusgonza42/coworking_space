@@ -69,3 +69,5 @@ Con estos pasos, el backend se ejecutará y utilizará Docker para la base de da
 `application.properties`.
 
 ### Configuración del Frontend (#)
+
+- - -
