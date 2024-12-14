@@ -15,7 +15,7 @@ import java.util.List;
  * {/test} es el que se va modificando en función de la entidad que se esté trabajando.
  */
 @RestController
-@RequestMapping ( "/coworking/space/api/v1/test" )
+@RequestMapping ( "/api/test" )
 @Tag ( name = "Test", description = "Ejemplo de Test Controller" )
 public class TestController {
 
