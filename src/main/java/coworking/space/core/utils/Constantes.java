@@ -12,5 +12,7 @@ public class Constantes {
     public static final String ERROR_ACTUALIZAR_SALA = "Error al actualizar la sala: ";
     public static final String ERROR_INACTIVAR_SALA = "Error al eliminar(INACTIVAR) la sala: ";
     public static final String ERROR_CAMBIAR_ESTADO_SALA = "Error al obtener la sala: ";
+    public static final String ERROR_EMAIL_REGISTRADO = "El email ya está registrado";
+
 
 }
